@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App {
+    padding: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+
+  .details {
+    width: 300px;
   }
-}
+  
+  .details-img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .details-img-loader {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: #e5e5e5;
+  }
+  
+  .details-text {
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* border-top: none; */
+  }
+  
+  .details-text-item {
+    padding: 12px 24px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .details-text-item:last-child{
+    border-bottom: none;
+  }
+  
+  .details-text-title {
+    font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 24px;
+  }
+
+  .list-container {
+    list-style-type: none;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 32px;
+  }
+  
+  .list-item {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color .2s ease;
+  }
+  
+  .list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .list-item:hover {
+    background-color: #d8d8d8;
+  }
+  
+  .selected {
+    background-color: #666;
+    color: #fff;
+    cursor: auto;
+  }
+  
+  .selected:hover {
+    background-color: #666;
+  }
